@@ -73,13 +73,13 @@ for (let psalmElement of psalmArray) {
             psalmTextArray[i] = psalmTextArray[i].substring(1);
         }
         if (psalmTextArray[i].slice(-1) === "*") {
-            psalmTextArray[i] = psalmTextArray[i].slice(0, -1);
-            psalmTextArray[i] += "<span class='asterisk'>*</span>";
+            psalmTextArray[i] = psalmTextArray[i].slice(0, -2);
+            psalmTextArray[i] += "&nbsp<span class='asterisk'>*</span>";
         }
 
         if (psalmTextArray[i].slice(-1) === "†") {
-            psalmTextArray[i] = psalmTextArray[i].slice(0, -1);
-            psalmTextArray[i] += "<span class='asterisk'>†</span>";
+            psalmTextArray[i] = psalmTextArray[i].slice(0, -2);
+            psalmTextArray[i] += "&nbsp<span class='asterisk'>†</span>";
         }
 
         if (isItAFirstLine) {
