@@ -19,7 +19,18 @@ function makeItalics(str) {
         if (str.indexOf("_") === -1 || str.indexOf("_") === str.indexOf("__") && str.indexOf("_", str.indexOf("__") + 2)) {
             break;
         }
-        
+        let firstIndex = -1;
+        while (true) {
+            firstIndex = str.indexOf("_", firstIndex + 1);
+            if (firstIndex === str.indexOf("__")) {
+                firstIndex++;
+                continue;
+            }
+            break;
+        }
+        let secondIndex = str.indexOf("_", firstIndex + 1);
+        console.log(str.slice(firstIndex, secondIndex));
+        break;
     }
     return str;
 }
