@@ -1,0 +1,52 @@
+body {
+    font-family: "Book Antiqua";
+    width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    color: red;
+    font-weight: normal;
+    font-size: 10px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+}
+
+h4 {
+    text-align: center;
+}
+
+strong {
+    color: red;
+}
+
+p {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+
+.music {
+    font-family: "Guido HU";
+    font-size: 24px;
+}
+
+.musictext {
+    white-space: pre;
+}
+
+
+@media screen and (max-width: 800px) {
+    body {
+        width: 100%
+    }
+}
