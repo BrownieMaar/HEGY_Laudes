@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'GuidoHU';
+    src: url(../guidohu_.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Book Antiqua";
+    src: url(../BKANT.TTF);
+}
+
+@font-face {
+    font-family: "Book Antiqua";
+    src: url(../ANTQUAB.TTF);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Book Antiqua";
+    src: url(../ANTQUAI.TTF);
+    font-style: italic;
+}
+
 body {
     font-family: "Book Antiqua";
     width: 800px;
@@ -32,21 +54,38 @@ strong {
 p {
     font-size: 12px;
     margin-top: 0px;
-    margin-bottom: 3px;
+    margin-bottom: 0px;
 }
 
 .music {
     font-family: "Guido HU";
     font-size: 24px;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: hidden;
 }
 
 .musictext {
     white-space: pre;
 }
 
+.rubrum {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
 
-@media screen and (max-width: 800px) {
+.asterisk {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.intend {
+    margin-left: 0.5rem;
+}
+
+
+@media screen and (max-width: 810px) {
     body {
-        width: 100%
+        width: 100%;
+        margin-inline: 10px;
     }
 }
