@@ -85,7 +85,7 @@ p {
 
 @media screen and (max-width: 810px) {
     body {
-        width: 100%;
-        margin-inline: 10px;
+        width: 90%;
+        margin-inline: 12px;
     }
 }
