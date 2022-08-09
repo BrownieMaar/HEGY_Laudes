@@ -20,6 +20,10 @@
     font-style: italic;
 }
 
+:root {
+    --base-fontsize: 18px;
+}
+
 body {
     font-family: "Book Antiqua";
     width: 800px;
@@ -38,7 +42,7 @@ h2 {
 h3 {
     color: red;
     font-weight: normal;
-    font-size: 10px;
+    font-size: calc(var(--base-fontsize) * (10/12));
     margin-top: 12px;
     margin-bottom: 3px;
 }
@@ -52,21 +56,25 @@ strong {
 }
 
 p {
-    font-size: 12px;
+    font-size: var(--base-fontsize);
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
 .music {
     font-family: "GuidoHU";
-    font-size: 24px;
+    font-size: calc(var(--base-fontsize) * 2);
     white-space: nowrap;
-    text-overflow: clip;
-    overflow: hidden;
 }
 
 .musictext {
     white-space: pre;
+}
+
+pre {
+    margin-top: 0px;
+    font-family: inherit;
+    font-size: var(--base-fontsize);
 }
 
 .rubrum {
@@ -80,6 +88,16 @@ p {
 
 .intend {
     margin-left: 0.5rem;
+}
+
+.hymn {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+}
+
+.verse {
+    font-size: var(--base-fontsize);
 }
 
 
