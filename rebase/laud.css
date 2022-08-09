@@ -21,7 +21,7 @@
 }
 
 :root {
-    --base-fontsize: 18px;
+    --base-fontsize: 14px;
 }
 
 body {
@@ -69,6 +69,7 @@ p {
 
 .musictext {
     white-space: pre;
+    margin-bottom: 0;
 }
 
 pre {
@@ -91,19 +92,19 @@ pre {
 }
 
 .hymn {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 0.5rem;
+    columns: 2;
+    margin-top: 1rem;
 }
 
 .verse {
     font-size: var(--base-fontsize);
+    width: 100%;
+    margin-bottom: 0.5rem;
 }
 
 
 @media screen and (max-width: 810px) {
     body {
         width: 90%;
-        margin-inline: 12px;
     }
 }

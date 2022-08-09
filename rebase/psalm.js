@@ -2,13 +2,10 @@ const psalmArray = document.getElementsByClassName("psalm");
 
 function makeBold(str) {
     while (str.indexOf("__") !== -1) {
-        console.log("Found one!");
         let firstIndex = str.indexOf("__")
         let secondIndex = str.indexOf("__", firstIndex + 1);
-        console.log(`${firstIndex}, ${secondIndex}`);
         let inside = str.slice(firstIndex + 2, secondIndex);
         inside = `<b>${inside}</b>`;
-        console.log(inside);
         str = str.slice(0, firstIndex) + inside + str.slice(secondIndex + 2, str.length);
     }
     return str;
@@ -31,11 +28,9 @@ function makeItalics(str) {
         }
 
         let secondIndex = str.indexOf("_", firstIndex + 1);
-        console.log(str.slice(firstIndex, secondIndex + 1));
         let diff = (str[secondIndex + 1] === "_") ? 0 : 1;
         let inside = str.slice(firstIndex + 1, secondIndex);
         inside = `<i>${inside}</i>`;
-        console.log(inside);
         str = str.slice(0, firstIndex) + inside + str.slice(secondIndex + diff, str.length);
     }
     return str;
@@ -45,7 +40,6 @@ for (let psalmElement of psalmArray) {
     const psalmTextArray = psalmElement.innerHTML.split("\n");
     if (psalmTextArray[0] === "") psalmTextArray.shift();
     psalmElement.innerHTML = "";
-    console.log(psalmTextArray)
     for (let i = 0; i < psalmTextArray.length; i++) {
         let isItAFirstLine = false;
         if (i === 0) {
@@ -90,5 +84,3 @@ for (let psalmElement of psalmArray) {
         psalmElement.appendChild(psalmRowElement);
     }
 }
-
-console.log(psalmArray);
