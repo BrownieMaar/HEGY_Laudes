@@ -59,6 +59,7 @@ p {
     font-size: var(--base-fontsize);
     margin-top: 0px;
     margin-bottom: 0px;
+    text-align: justify;
 }
 
 .music {
@@ -88,7 +89,9 @@ pre {
 }
 
 .intend {
-    margin-left: 0.5rem;
+    margin-left: 1rem !important;
+    
+    text-indent: -0.5rem !important;
 }
 
 .hymn {
@@ -102,9 +105,21 @@ pre {
     margin-bottom: 0.5rem;
 }
 
+.psalm > p {
+    text-align: left;
+    text-indent: -1rem;
+    margin-left: 1rem; 
+}
 
 @media screen and (max-width: 810px) {
     body {
         width: 90%;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .hymn {
+        columns: 1;
+    }
+    
 }
