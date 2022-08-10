@@ -1,22 +1,22 @@
 @font-face {
     font-family: 'GuidoHU';
-    src: url(../guidohu_.ttf) format("truetype");
+    src: url(./guidohu_.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Book Antiqua";
-    src: url(../BKANT.TTF);
+    src: url(./BKANT.TTF);
 }
 
 @font-face {
     font-family: "Book Antiqua";
-    src: url(../ANTQUAB.TTF);
+    src: url(./ANTQUAB.TTF);
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Book Antiqua";
-    src: url(../ANTQUAI.TTF);
+    src: url(./ANTQUAI.TTF);
     font-style: italic;
 }
 
