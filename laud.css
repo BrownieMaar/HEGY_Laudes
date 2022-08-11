@@ -74,6 +74,8 @@ p {
 }
 
 pre {
+    white-space: pre;
+    margin-bottom: 0;
     margin-top: 0px;
     font-family: inherit;
     font-size: var(--base-fontsize);
